@@ -1,13 +1,17 @@
 import {Header} from "./component/Header";
 import {Welcome} from "./component/Welcome";
+import {Bio} from "./component/Bio";
 
 function App() {
     return (
-        <div className="flex  items-center flex-col min-h-screen">
+        <div className="flex items-center flex-col min-h-screen">
             <Header/>
-            <main className="py-16 items-center">
+            <div className="py-12 items-center">
                 <Welcome/>
-            </main>
+            </div>
+            <div className="px-24">
+                <Bio/>
+            </div>
         </div>
     )
 }
