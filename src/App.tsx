@@ -12,7 +12,7 @@ function App() {
             <div className="py-6 items-center">
                 <Welcome/>
             </div>
-            <div className="px-24 max-w-screen-2xl flex-col flex gap-3">
+            <div className="px-24 max-w-[1280px] flex-col flex gap-3">
                 <Bio/>
                 <Techs/>
                 <Works/>
