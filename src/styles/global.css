@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 body {
-    @apply bg-gray-900 text-gray-100;
+    @apply bg-gray-900 text-white;
+    background-image: url("../assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     -webkit-font-smoothing: antialiased;
 }
