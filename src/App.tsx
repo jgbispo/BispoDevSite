@@ -1,45 +1,25 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import {Header} from "./component/Header";
+import {Welcome} from "./component/Welcome";
+import {Bio} from "./component/Bio";
+import {Techs} from "./component/Tech/Techs";
+import {Works} from "./component/Work/Works";
+import {SocialContainer} from "./component/Social/SocialContainer";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
-  )
+    return (
+        <div className="flex items-center flex-col min-h-screen">
+            <Header/>
+            <div className="py-6 items-center">
+                <Welcome/>
+            </div>
+            <div className="px-24 max-w-[1280px] flex-col flex gap-3">
+                <Bio/>
+                <Techs/>
+                <Works/>
+                <SocialContainer />
+            </div>
+        </div>
+    )
 }
 
 export default App
