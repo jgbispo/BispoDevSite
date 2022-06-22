@@ -2,6 +2,7 @@ import {Header} from "./component/Header";
 import {Welcome} from "./component/Welcome";
 import {Bio} from "./component/Bio";
 import {Techs} from "./component/Techs";
+import {Works} from "./component/Works";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <div className="px-24 max-w-screen-2xl flex-col flex gap-12">
                 <Bio/>
                 <Techs/>
+                <Works/>
             </div>
         </div>
     )

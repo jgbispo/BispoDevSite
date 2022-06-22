@@ -32,7 +32,8 @@ export function Techs() {
                     return <Tech
                         key={tech.id}
                         title={tech.techName}
-                        url={tech.techUrl}/>
+                        url={tech.techUrl}
+                    />
                 })}
             </div>
         </div>
